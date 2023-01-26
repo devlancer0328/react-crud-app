@@ -1,5 +1,5 @@
 import React from "react";
-import { Table } from "react-bootstrap";
+import { Table, Button } from "react-bootstrap";
 import Guests from "./Guests";
 
 const Home = () => {
@@ -28,6 +28,11 @@ const Home = () => {
                                     </td>
                                     <td>
                                         {e.age}
+                                    </td>
+                                    <td>
+                                        <Button onClick={() => alert(e.id)}>Edit</Button>
+                                        &nbsp;
+                                        <Button className="btn btn-danger" onClick={() => alert(e.id)}>Delete</Button>
                                     </td>
                                 </tr>
                             )
