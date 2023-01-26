@@ -17,6 +17,7 @@ const Home = () => {
 
     return (
         <div>
+            <h2>Guest Book</h2>
             <Table striped bordered hover size="sm">
                 <thead>
                     <tr>
