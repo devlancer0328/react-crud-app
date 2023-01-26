@@ -1,8 +1,20 @@
 import React from "react";
 import { Table, Button } from "react-bootstrap";
+import { useNavigate, Link } from "react-router-dom";
 import Guests from "./Guests";
 
 const Home = () => {
+
+    let history = useNavigate();
+
+    const handleDelete = id => {
+        const index = Guests.map(e => {
+            return e.id;
+        }).indexOf(id);
+        Guests.splice(index,1);
+        history('/');
+    }
+
     return (
         <div>
             <Table striped bordered hover size="sm">
@@ -30,9 +42,11 @@ const Home = () => {
                                         {e.age}
                                     </td>
                                     <td>
-                                        <Button onClick={() => alert(e.id)}>Edit</Button>
+                                        <Link to='/edit'>
+                                            <Button>Edit</Button>
+                                        </Link>
                                         &nbsp;
-                                        <Button className="btn btn-danger" onClick={() => alert(e.id)}>Delete</Button>
+                                        <Button className="btn btn-danger" onClick={() => handleDelete(e.id)}>Delete</Button>
                                     </td>
                                 </tr>
                             )
