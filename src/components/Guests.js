@@ -48,6 +48,26 @@ const Guests = [
         id: "10",
         name: "Daniel Piwowarski",
         age: "33"
+    },
+    {
+        id: "11",
+        name: "Martin Elski",
+        age: "28"
+    },
+    {
+        id: "12",
+        name: "Magda Narozna",
+        age: "66"
+    },
+    {
+        id: "13",
+        name: "Kamil Cichocki",
+        age: "44"
+    },
+    {
+        id: "14",
+        name: "Ania Cicha",
+        age: "35"
     }
 ]
 
