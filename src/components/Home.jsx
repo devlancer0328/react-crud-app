@@ -22,6 +22,9 @@ const Home = () => {
                 <thead>
                     <tr>
                         <th>
+                            ID
+                        </th>
+                        <th>
                             Name
                         </th>
                         <th>
@@ -36,6 +39,9 @@ const Home = () => {
                         Guests.map(e => {
                             return (
                                 <tr>
+                                    <td>
+                                        {e.id}
+                                    </td>
                                     <td>
                                         {e.name}
                                     </td>
