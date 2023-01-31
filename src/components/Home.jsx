@@ -63,6 +63,11 @@ const Home = () => {
                     }
                 </tbody>
             </Table>
+            <div className="btn_container">
+                <Link to='/add'>
+                    <Button className="btn btn-info w-25 mt-2">Add a new data</Button>
+                </Link>
+            </div>
         </div> 
     )
 }
