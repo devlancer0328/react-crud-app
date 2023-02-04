@@ -19,10 +19,11 @@ Used technologies:
 ## Screens
 * Desktop version :computer:   
   
---*To Do*
+--*To Do*--
 
 * Mobile version :iphone:     
---*To Do*
+
+--*To Do*--
 
 ## Live :star2:
 https://goldipl.github.io/react-crud-app/
