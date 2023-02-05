@@ -16,11 +16,11 @@ const Add = () => {
                 <Form className="d-grip">
                     <div className="mb-1 mt-2">
                         <label className="mr-3" htmlFor="name">Name</label>
-                        <input type="text" name="name" id="name" />
+                        <input type="text" name="name" id="name" placeholder="Enter name"/>
                     </div>
                     <div className="mb-1 mt-2">
                         <label className="ml-3 mr-3" htmlFor="age">Age</label>
-                        <input type="number" name="age" id="age" />
+                        <input type="number" name="age" id="age" placeholder="Enter age"/>
                     </div>
                     <input className="btn btn-info mt-4" type="submit" value="Add a new data" />
                 </Form>
