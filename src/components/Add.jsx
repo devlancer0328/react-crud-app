@@ -13,9 +13,9 @@ const Add = () => {
     const handleData = (e) => {
         e.preventDefault();
 
-        let randomValue = Math.floor(Math.random()*100);
+        let lastElement = Guests.length + 1;
         
-        Guests.push({id: randomValue, name: name, age: age});
+        Guests.push({id: lastElement, name: name, age: age});
 
         history('/');
     };
