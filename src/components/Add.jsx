@@ -12,12 +12,14 @@ const Add = () => {
 
     const handleData = (e) => {
         e.preventDefault();
-
         let lastElement = Guests.length + 1;
-        
-        Guests.push({id: lastElement, name: name, age: age});
 
-        history('/');
+        if (name.trim() === "" || age.trim() == "") {
+            alert("required both field");
+        } else {
+            Guests.push({id: lastElement, name: name, age: age});
+            history('/');
+        }
     };
 
     return ( 
