@@ -15,7 +15,8 @@ const Home = () => {
         history('/');
     }
 
-    const handleEdit = (name, age) => {
+    const handleEdit = (id, name, age) => {
+        localStorage.setItem('id', id);
         localStorage.setItem('name', name);
         localStorage.setItem('age', age);
     }
@@ -55,7 +56,7 @@ const Home = () => {
                                     </td>
                                     <td>
                                         <Link to='/edit'>
-                                            <Button onClick={() => handleEdit(e.name, e.age)}>Edit</Button>
+                                            <Button onClick={() => handleEdit(e.id, e.name, e.age)}>Edit</Button>
                                         </Link>
                                         &nbsp;
                                         <Button className="btn btn-danger" onClick={() => handleDelete(e.id)}>Delete</Button>
