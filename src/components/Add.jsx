@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { Button, Form } from "react-bootstrap";
 import { useState } from "react";
 import Guests from "./Guests";
@@ -39,6 +39,11 @@ const Add = () => {
                     </div>
                     <Button onClick={(e) => handleData(e)} className="btn btn-info mt-4">Submit</Button>
                 </Form>
+            </div>
+            <div>
+                <Link to='/'>
+                    <Button>Back to Guest Book</Button>
+                </Link>
             </div>
         </>
      );
