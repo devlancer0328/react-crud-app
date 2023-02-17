@@ -24,6 +24,7 @@ const Home = () => {
     return (
         <div>
             <h2 className="mb-4">Guest Book</h2>
+            <h5 className="mb-4 pt-4 border-top">Guest number: {Guests.length}</h5>
             <Table striped bordered hover size="sm">
                 <thead>
                     <tr>
