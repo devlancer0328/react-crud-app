@@ -1,7 +1,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Screens](#screens)
+* [Screenshots](#screenshots)
 * [Live](#live-star2)
 
 ## General info
@@ -16,14 +16,10 @@ Used technologies:
 * React
 * Styled Components
 
-## Screens
+## Screenshots
 * Desktop version :computer:   
   
---*To Do*--
-
-* Mobile version :iphone:     
-
---*To Do*--
+![Screenshot](./screenshots/screenshot.png) 
 
 ## Live :star2:
 https://goldipl.github.io/react-crud-app/
